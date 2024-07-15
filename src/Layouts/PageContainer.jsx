@@ -1,16 +1,20 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { GlobalContext } from "../context/global.context";
 
 const PageContainer = () => {
   const [showToast, setShowToast] = useState(false);
+  const [state, dispatch] = useContext(GlobalContext);
+  
+  console.log(state.isSearching);
 
   useEffect(() => {
-    if(localStorage.getItem("searching") === "true") {
+    if(state.isSearching) {
       setShowToast(true);
     } 
-  }, [localStorage.getItem("searching")]);
+  }, [state.isSearching]);
 
   return (
     <>

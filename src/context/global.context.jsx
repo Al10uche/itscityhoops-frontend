@@ -4,6 +4,7 @@ const initialState = {
   isLoggedIn: false,
   user: null,
   pendingGameForm: null,
+  isSearching: false,
 };
 
 const GlobalContext = createContext(initialState);
@@ -26,6 +27,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         pendingGameForm: action.payload,
+      };
+    case "SET_IS_SEARCHING":
+      return {
+        ...state,
+        isSearching: true,
       };
     default:
       return state;
