@@ -15,29 +15,21 @@ const Footer = () => {
           >
             About us
           </Link>
-          <Link
-            to={"/contact"}
-            className="text-xl font-bold hover:text-yellow-300 hover:scale-[1.08] transition-all duration-200"
-          >
-            Contact us
-          </Link>
-          <Link className="text-xl font-bold hover:text-yellow-300 hover:scale-[1.08] transition-all duration-200">
-            Products
+         
+          <Link to={"/login"} className="text-xl font-bold hover:text-yellow-300 hover:scale-[1.08] transition-all duration-200">
+            Sign in
           </Link>
         </div>
       </div>
       <Logo size={130} />
       <div>
         <div className="flex gap-3 items-center justify-center">
-          <span className="rounded-full bg-yellow-300 block p-2 aspect-square text-black hover:scale-105 transition-all duration-200 hover:text-blue-700">
+          <a href="https://www.facebook.com/itsCityHoops?mibextid=ZbWKwL" target="_blank" className="rounded-full bg-yellow-300 block p-2 aspect-square text-black hover:scale-105 transition-all duration-200 hover:text-blue-700">
             <FaFacebookF size={25} />
-          </span>
-          <span className="rounded-full bg-yellow-300 block p-2 aspect-square text-black hover:scale-105 transition-all duration-200 hover:text-fuchsia-900">
+          </a>
+          <a href="https://www.instagram.com/itscityhoops?igsh=MWp0aWlmYTdzN3E1MA==" target="_blank" className="rounded-full bg-yellow-300 block p-2 aspect-square text-black hover:scale-105 transition-all duration-200 hover:text-fuchsia-900">
             <FaInstagram size={25} />
-          </span>
-          <span className="rounded-full bg-yellow-300 block p-2 aspect-square text-black hover:scale-105 transition-all duration-200 hover:text-red-600">
-            <FaYoutube size={25} />
-          </span>
+          </a>
           <span className="font-bold text-white text-2xl">/ItsCityHoops</span>
         </div>
       </div>

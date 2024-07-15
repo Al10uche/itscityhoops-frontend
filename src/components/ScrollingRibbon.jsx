@@ -39,7 +39,7 @@ const ScrollingRibbon = () => {
   return (
     <div
       ref={ribbonContainerRef}
-      className="flex items-center  w-full whitespace-nowrap gap-2"
+      className="flex items-center  w-full whitespace-nowrap gap-2 max-w-screen overflow-hidden"
     ></div>
   );
 };
