@@ -1,0 +1,28 @@
+const governoratesOfTunisia = [
+  { text: "Tunis", value: "Tunis" },
+  { text: "Ariana", value: "Ariana" },
+  { text: "Ben Arous", value: "Ben Arous" },
+  { text: "Manouba", value: "Manouba" },
+  { text: "Nabeul", value: "Nabeul" },
+  { text: "Zaghouan", value: "Zaghouan" },
+  { text: "Bizerte", value: "Bizerte" },
+  { text: "Beja", value: "Beja" },
+  { text: "Jendouba", value: "Jendouba" },
+  { text: "Kef", value: "Kef" },
+  { text: "Siliana", value: "Siliana" },
+  { text: "Sousse", value: "Sousse" },
+  { text: "Monastir", value: "Monastir" },
+  { text: "Mahdia", value: "Mahdia" },
+  { text: "Sfax", value: "Sfax" },
+  { text: "Kairouan", value: "Kairouan" },
+  { text: "Kasserine", value: "Kasserine" },
+  { text: "Sidi Bouzid", value: "Sidi Bouzid" },
+  { text: "Gabes", value: "Gabes" },
+  { text: "Mednine", value: "Mednine" },
+  { text: "Tataouine", value: "Tataouine" },
+  { text: "Gafsa", value: "Gafsa" },
+  { text: "Tozeur", value: "Tozeur" },
+  { text: "Kebili", value: "Kebili" },
+];
+
+export default governoratesOfTunisia;
