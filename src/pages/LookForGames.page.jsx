@@ -39,7 +39,6 @@ const LookForGames = () => {
     try {
       setLoading(true);
       const response = await submitGame(state.user.id, form);
-      console.log(response);
       if (response.status === 201) {
         setForm({
           type: "",
@@ -48,9 +47,7 @@ const LookForGames = () => {
           numberOfPlayers: 0,
           comments: "",
         });
-        console.log("Game submitted successfully");
-        localStorage.setItem("searching", true);
-        
+        dispatch({ type: "SET_IS_SEARCHING", payload: null });
       }
     } catch (error) {
       console.log(error);
